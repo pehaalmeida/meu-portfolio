@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -60,21 +60,25 @@ function App() {
 
   const skills = [
     { name: 'C#', level: 90, icon: Code },
-    { name: 'PHP', level: 85, icon: Server },
+    { name: 'PHP', level: 70, icon: Server },
+    { name: 'HTML/CSS', level: 90, icon: Globe },
     { name: 'JavaScript', level: 80, icon: Globe },
     { name: 'React', level: 75, icon: Code },
-    { name: 'HTML/CSS', level: 90, icon: Globe },
+    { name: 'Vue.js', level: 30, icon: Code },
+    { name: 'Python', level: 65, icon: Code },
+    { name: 'django', level: 85, icon: Globe },
     { name: 'SQL', level: 85, icon: Database },
-    { name: 'MySQL', level: 80, icon: Database },
-    { name: 'Git', level: 75, icon: Code }
+    { name: 'MySQL', level: 75, icon: Database },
+    { name: 'SQLServer', level: 80, icon: Database },
+    { name: 'Git', level: 75, icon: Code },
   ];
 
   const experiences = [
     {
-      title: "Desenvolvedor e Analista de Implantação Jr",
+      title: "Analista de Implantação Jr",
       company: "Linx, Stone Co",
       period: "Atual",
-      description: "Desenvolvimento de soluções em C#, PHP e JavaScript. Análise e implantação de sistemas para clientes."
+      description: " Realização de implantação, treinamento e capacitação dos sistemas de PDV e ERP para clientes do varejo e franquias, Ativação dos serviços relacionados aos produtos do segmento Food Service, Exemplo Linx Degust e Taste One, TEF, Pay Hub e Reshop."
     },
     {
       title: "Analista de Suporte Jr I e II",
@@ -100,13 +104,13 @@ function App() {
     {
       title: "Análise e Desenvolvimento de Sistemas",
       institution: "Unifatecie",
-      period: "2021-2023",
+      period: "2022-2024",
       description: "Tecnólogo focado em desenvolvimento de software e análise de sistemas."
     },
     {
       title: "Técnico em Informática",
       institution: "Senac",
-      period: "2019-2020",
+      period: "2019-2021",
       description: "Formação técnica em informática com foco em hardware e software."
     },
     {
@@ -125,25 +129,32 @@ function App() {
 
   const projects = [
     {
-      title: "Sistema de Gestão Empresarial",
-      description: "Sistema completo desenvolvido em C# para gestão de empresas, incluindo controle de estoque, vendas e relatórios.",
-      technologies: ["C#", ".NET", "SQL Server", "WPF"],
-      github: "#",
+      title: "SubMAX - Plataforma de Gestão para Personal Trainers",
+      description: "SubMax é uma aplicação web desenvolvida em Python 3.12 e Django 5.2, projetada para simplificar o gerenciamento diário de personal trainers, oferecendo cadastro de alunos, registro de avaliações físicas e agenda de eventos.",
+      technologies: ["Python", "Django", "MySql", "Bootstrap"],
+      github: "https://github.com/pehaalmeida",
+      demo: "https://github.com/pehaalmeida"
+    },
+    {
+      title: "Painel De Senha Vue.js",
+      description: "Sistema responsivo feito com Vue 3, Pinia e Tailwind CSS para exibição e controle de senhas em ambientes de atendimento. Destaque: chamada de senhas por voz para mais acessibilidade.",
+      technologies: ["Vue 3", "Vue Router", "Tailwind CSS", "Vite", "Node.js"],
+      github: "https://github.com/pehaalmeida/Painel-de-senha-vue.js",
+      demo: "https://github.com/pehaalmeida/Painel-de-senha-vue.js"
+    },
+    {
+      title: "SsE-ContExped",
+      description: "Sistema para controle de saída de cargas e pedidos na expedição de caminhões. Registra entradas, saídas e dados essenciais para o setor.",
+      technologies: ["C#", ".NET Framework", "Sql SERVER"],
+      github: "https://github.com/pehaalmeida/SsE-ContExped",
       demo: "#"
     },
     {
-      title: "E-commerce Platform",
-      description: "Plataforma de e-commerce responsiva desenvolvida com PHP e JavaScript, com painel administrativo completo.",
-      technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Dashboard Analytics",
-      description: "Dashboard interativo para análise de dados com gráficos dinâmicos e relatórios em tempo real.",
-      technologies: ["React", "JavaScript", "Chart.js", "API REST"],
-      github: "#",
-      demo: "#"
+      title: "AUTOMONI - Monitor de IP",
+      description: "Este sistema foi desenvolvido para monitorar um endereço IP específico dentro da rede local. Ele verifica continuamente a conectividade com o IP informado e registra qualquer falha detectada. Além disso, o sistema exibe na tela a quantidade total de erros ocorridos durante a execução.",
+      technologies: ["Batchfile"],
+      github: "https://github.com/pehaalmeida/AutoMoni",
+      demo: "https://github.com/pehaalmeida/AutoMoni"
     }
   ];
 
@@ -158,7 +169,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
             >
-              Pedro Almeida
+              Augusto Almeida
             </motion.div>
             
             <div className="hidden md:flex space-x-8">
@@ -291,16 +302,16 @@ function App() {
             >
               <h3 className="text-2xl font-bold mb-6">Desenvolvedor Apaixonado por Tecnologia</h3>
               <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Sou um desenvolvedor full stack com mais de 4 anos de experiência, especializado em criar soluções robustas e escaláveis. 
-                Minha jornada na tecnologia começou com curiosidade e evoluiu para uma paixão por resolver problemas complexos através do código.
+                Sou um desenvolvedor full stack focado em criar soluções robustas, escaláveis e eficientes. 
+                Minha trajetória na tecnologia começou com a curiosidade e rapidamente se transformou em uma paixão por resolver desafios complexos por meio do código e da inovação.
               </p>
               <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Atualmente trabalho na Linx/Stone Co, onde desenvolvo sistemas empresariais e lidero projetos de implantação. 
-                Tenho experiência sólida em C#, PHP, JavaScript e bancos de dados, sempre buscando as melhores práticas e tecnologias mais recentes.
+                Atualmente atuo na Linx/Stone Co, onde sou responsável por ativações e implantações de sistemas. 
+                Possuo experiência sólida com C#, PHP, JavaScript e bancos de dados relacionais e não-relacionais. Estou sempre em busca das melhores práticas e das tecnologias mais atuais para entregar soluções de alto desempenho.
               </p>
               <div className="flex items-center gap-4">
                 <MapPin className="w-5 h-5 text-blue-600" />
-                <span>Paranavaí, PR - Brasil</span>
+                <span>Bauru, SP – Brasil</span>
               </div>
             </motion.div>
 
@@ -313,23 +324,23 @@ function App() {
             >
               <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
                 <Code className="w-8 h-8 text-blue-600 mb-4" />
-                <h4 className="font-bold mb-2">4+ Anos</h4>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Experiência em Desenvolvimento</p>
+                <h4 className="font-bold mb-2">Tecnólogo</h4>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Formação em Análise e Desenvolvimento de Sistemas, com foco em arquitetura de software e melhores práticas de codificação.</p>
               </div>
               <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
                 <Briefcase className="w-8 h-8 text-purple-600 mb-4" />
-                <h4 className="font-bold mb-2">50+ Projetos</h4>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Projetos Concluídos</p>
+                <h4 className="font-bold mb-2">Projetos</h4>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Vivência prática em projetos reais, atuando desde o levantamento de requisitos até a entrega final ao cliente.</p>
               </div>
               <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
                 <GraduationCap className="w-8 h-8 text-green-600 mb-4" />
-                <h4 className="font-bold mb-2">Tecnólogo</h4>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Análise e Desenvolvimento</p>
+                <h4 className="font-bold mb-2">Estudos</h4>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Comprometido com o aprendizado contínuo e a atualização constante nas tecnologias mais modernas do mercado.</p>
               </div>
               <div className={`p-6 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg`}>
                 <User className="w-8 h-8 text-pink-600 mb-4" />
-                <h4 className="font-bold mb-2">100+ Clientes</h4>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Atendidos com Sucesso</p>
+                <h4 className="font-bold mb-2">Metodologias Ágeis</h4>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>Experiência sólida com metodologias ágeis como Scrum e Kanban, aplicadas em ambientes colaborativos e focados em resultados.</p>
               </div>
             </motion.div>
           </div>
@@ -543,7 +554,7 @@ function App() {
             >
               <Mail className="w-8 h-8 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold mb-2">Email</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>pedro@email.com</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Pedroalmeida@hotmail.com</p>
             </motion.a>
 
             <motion.a
@@ -556,7 +567,7 @@ function App() {
             >
               <Phone className="w-8 h-8 text-green-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold mb-2">Telefone</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>(44) 99999-9999</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>(14) 99889-9162</p>
             </motion.a>
 
             <motion.a
@@ -571,7 +582,7 @@ function App() {
             >
               <Linkedin className="w-8 h-8 text-blue-700 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold mb-2">LinkedIn</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>pehaalmeida</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>peh.aalmeida</p>
             </motion.a>
 
             <motion.a
@@ -586,7 +597,7 @@ function App() {
             >
               <Github className="w-8 h-8 text-gray-800 dark:text-white mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold mb-2">GitHub</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>@pedro</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>@peh.aalmeida</p>
             </motion.a>
           </div>
         </div>
@@ -596,7 +607,7 @@ function App() {
       <footer className={`py-8 ${darkMode ? 'bg-gray-900 border-t border-gray-800' : 'bg-gray-50 border-t border-gray-200'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={darkMode ? 'text-gray-400' : 'text-gray-600'}>
-            © 2024 Pedro Augusto Almeida Rodrigues. Todos os direitos reservados.
+            © 2025 Pedro Augusto Almeida Rodrigues. Todos os direitos reservados.
           </p>
         </div>
       </footer>
