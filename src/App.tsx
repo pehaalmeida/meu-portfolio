@@ -154,6 +154,13 @@ function App() {
       technologies: ["Batchfile"],
       github: "https://github.com/pehaalmeida/AutoMoni",
       demo: "https://github.com/pehaalmeida/AutoMoni"
+    },
+    {
+      title: "Sistema de Gerenciamento de Produtos - RESTAPI",
+      description: "A ideia do Projeto foi criar uma aplicação completa (frontend + backend), com integração externa e alguns desafios práticos como upload de imagens e consumo de API. A aplicação é um sistema de gerenciamento de produtos, onde o usuário pode cadastrar, editar e excluir produtos, além de visualizar uma lista de todos os produtos cadastrados.",
+      technologies: ["ASP.NET CORE", "C#", "Entity Framework", "SQL Server", "Vue 3", "Vite", "JavaScript", "TailwindCSS", "Swagger"],
+      github: "https://github.com/pehaalmeida/avaliacao-vue-dotnet",
+      demo: "https://github.com/pehaalmeida/avaliacao-vue-dotnet"
     }
   ];
 
