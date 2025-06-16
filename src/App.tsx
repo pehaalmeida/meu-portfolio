@@ -260,7 +260,7 @@ function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
                 <img
-                  src="./foto.png"
+                  src={`${import.meta.env.BASE_URL}foto.png`} 
                   alt="Pedro Almeida"
                   className="relative w-80 h-80 object-cover rounded-full border-4 border-white shadow-2xl"
                 />
