@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { 
   Moon, 
   Sun, 
@@ -7,7 +7,7 @@ import {
   Linkedin, 
   Mail, 
   Phone, 
-  MapPin, 
+  MapPin,
   Download,
   Code,
   Database,
@@ -17,7 +17,6 @@ import {
   GraduationCap,
   User,
   ChevronDown,
-  ExternalLink
 } from 'lucide-react';
 
 function App() {
@@ -224,7 +223,7 @@ function App() {
                 </span>
               </h1>
               <p className={`text-xl mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Especialista em C#, PHP e JavaScript. Transformo ideias em soluções digitais inovadoras.
+                Especialista em C#, PHP, Python e JavaScript. Transformo ideias em soluções digitais inovadoras.
               </p>
               <div className="flex flex-wrap gap-4">
                 <motion.button
@@ -238,7 +237,7 @@ function App() {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/Currículo - Pedro Almeida (2).pdf"
+                  href="/Currículo-Pedro Almeida.pdf"
                   download
                   className={`flex items-center gap-2 px-8 py-3 rounded-lg font-semibold border-2 transition-all duration-200 ${
                     darkMode 
@@ -261,7 +260,7 @@ function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
                 <img
-                  src="/Design sem nome (8).png"
+                  src="/meu-portfolio/foto.png"
                   alt="Pedro Almeida"
                   className="relative w-80 h-80 object-cover rounded-full border-4 border-white shadow-2xl"
                 />
@@ -512,13 +511,6 @@ function App() {
                     <Github className="w-4 h-4" />
                     GitHub
                   </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </a>
                 </div>
               </motion.div>
             ))}
@@ -545,7 +537,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <motion.a
-              href="mailto:pedro@email.com"
+              href="mailto:contato.pedroalmeida@hotmail.com"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -554,11 +546,11 @@ function App() {
             >
               <Mail className="w-8 h-8 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold mb-2">Email</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Pedroalmeida@hotmail.com</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>contato.pedroalmeida@hotmail.com</p>
             </motion.a>
 
             <motion.a
-              href="tel:+5544999999999"
+              href="tel:+5514998899162"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -586,7 +578,7 @@ function App() {
             </motion.a>
 
             <motion.a
-              href="https://github.com/pedro"
+              href="https://github.com/peh.aalmeida"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 50 }}
@@ -595,9 +587,9 @@ function App() {
               viewport={{ once: true }}
               className={`p-6 rounded-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg hover:shadow-xl transition-all duration-300 text-center group`}
             >
-              <Github className="w-8 h-8 text-gray-800 dark:text-white mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <Github className="w-8 h-8 text-gray-800 dark:text-white mx-auto mb-4 group-hover:scale-110 transition-transform" stroke="#e5e7eb"/>
               <h3 className="font-bold mb-2">GitHub</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>@peh.aalmeida</p>
+              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>peh.aalmeida</p>
             </motion.a>
           </div>
         </div>
