@@ -103,26 +103,26 @@ function App() {
     {
       title: "Análise e Desenvolvimento de Sistemas",
       institution: "Unifatecie",
-      period: "2022-2024",
-      description: "Tecnólogo focado em desenvolvimento de software e análise de sistemas."
+      period: "2022–2024",
+      description: "Curso superior de tecnologia com foco em desenvolvimento de software, análise de sistemas e soluções computacionais."
     },
     {
       title: "Técnico em Informática",
       institution: "Senac",
-      period: "2019-2021",
-      description: "Formação técnica em informática com foco em hardware e software."
+      period: "2019–2021",
+      description: "Formação técnica abrangendo manutenção de hardware, redes, sistemas operacionais e desenvolvimento de software."
     },
     {
-      title: "Curso PHP",
+      title: "Cursos Recentes de Programação",
+      institution: "Curso em Video, DIO.ME, Udemy",
+      period: "2024–2025",
+      description: "Participação em diversos cursos de curta duração voltados à programação e desenvolvimento de sistemas, com conteúdos como: Python, django, Vue.js e node.js bancos de dados relacionais (MySQL e SQL Server), além de práticas ágeis com Scrum e Kanban."
+    },
+    {
+      title: "Conjunto de Cursos em Desenvolvimento Web – Senac",
       institution: "Senac",
-      period: "2020",
-      description: "Curso especializado em desenvolvimento web com PHP."
-    },
-    {
-      title: "Curso JavaScript e jQuery",
-      institution: "Senac", 
-      period: "2019",
-      description: "Desenvolvimento front-end com JavaScript e jQuery."
+      period: "2019–2020",
+      description: "Participação em diversos cursos na instituição Senac, incluindo PHP, MySQL, JavaScript, jQuery, HTML e CSS, com foco na criação de sites e aplicações web."
     }
   ];
 
