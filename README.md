@@ -10,17 +10,6 @@ Este é o repositório do meu portfólio profissional. Desenvolvido com foco em 
 - [PostCSS](https://postcss.org/) – Ferramenta para transformar CSS com plugins
 - [ESLint](https://eslint.org/) – Linter para manter a qualidade do código
 
-## 📦 Instalação
-
-Para rodar localmente, siga os passos abaixo:
-
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/meu-portfolio.git
-
-# Navegue até o diretório
-cd meu-portfolio
-
 ✨ Funcionalidades
 Página inicial com apresentação pessoal
 
@@ -30,10 +19,8 @@ Layout responsivo para diferentes dispositivos
 
 Estilo moderno com Tailwind
 
-🛠 Estrutura do Projeto
-arduino
-Copiar
-Editar
+📦 Estrutura do Projeto
+```bash
 ├── index.html
 ├── src/
 │   ├── assets/
@@ -43,6 +30,8 @@ Editar
 ├── tailwind.config.js
 ├── vite.config.ts
 └── package.json
+```
+
 📝 Licença
 Este projeto está licenciado sob a MIT License.
 
