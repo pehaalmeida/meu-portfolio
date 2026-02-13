@@ -17,6 +17,8 @@ import {
   GraduationCap,
   User,
   ChevronDown,
+  Container,
+  LibraryBig,
 } from 'lucide-react';
 
 function App() {
@@ -58,25 +60,36 @@ function App() {
   };
 
   const skills = [
-    { name: 'C#', level: 90, icon: Code },
-    { name: 'PHP', level: 70, icon: Server },
+    { name: 'C#', level: 85, icon: Code },
+    { name: 'Python', level: 85, icon: Code },
+    { name: 'JavaScript', level: 80, icon: Code },
+    { name: 'PHP', level: 70, icon: Code },
+
     { name: 'HTML/CSS', level: 90, icon: Globe },
-    { name: 'JavaScript', level: 80, icon: Globe },
-    { name: 'React', level: 75, icon: Code },
-    { name: 'Vue.js', level: 30, icon: Code },
-    { name: 'Python', level: 65, icon: Code },
-    { name: 'django', level: 85, icon: Globe },
-    { name: 'SQL', level: 85, icon: Database },
-    { name: 'MySQL', level: 75, icon: Database },
+
+    { name: 'React', level: 75, icon: LibraryBig },
+    { name: 'django', level: 75, icon: LibraryBig },
+    { name: 'Vue.js', level: 30, icon: LibraryBig },
+
     { name: 'SQLServer', level: 80, icon: Database },
-    { name: 'Git', level: 75, icon: Code },
+    { name: 'MySQL', level: 75, icon: Database },
+
+    { name: 'Docker', level: 65, icon: Container },
+    { name: 'Git', level: 75, icon: Github },
+
   ];
 
   const experiences = [
     {
-      title: "Analista de Implantação Jr",
-      company: "Linx, Stone Co",
+      title: "Desenvolvedor Jr",
+      company: "Linx, ToTVS",
       period: "Atual",
+      description: "Atuação no desenvolvimento e manutenção de aplicações utilizando Delphi, C# (.NET) e Angular/TypeScript. Responsável por corrigir bugs, implementar novas funcionalidades e apoiar na evolução contínua dos sistemas internos."
+    },
+    {
+      title: "Analista de Implantação",
+      company: "Linx, Stone Co",
+      period: "2023-2025",
       description: " Realização de implantação, treinamento e capacitação dos sistemas de PDV e ERP para clientes do varejo e franquias, Ativação dos serviços relacionados aos produtos do segmento Food Service, Exemplo Linx Degust e Taste One, TEF, Pay Hub e Reshop."
     },
     {
@@ -90,12 +103,6 @@ function App() {
       company: "Paschoalotto",
       period: "2019-2020",
       description: "Atendimento ao cliente e vendas por telefone."
-    },
-    {
-      title: "Auxiliar Administrativo",
-      company: "Pires Materiais de Construções",
-      period: "2018-2019",
-      description: "Atividades administrativas e atendimento ao cliente."
     }
   ];
 
@@ -161,6 +168,13 @@ function App() {
       technologies: ["ASP.NET CORE", "C#", "Entity Framework", "SQL Server", "Vue 3", "Vite", "JavaScript", "TailwindCSS", "Swagger"],
       github: "https://github.com/pehaalmeida/avaliacao-vue-dotnet",
       demo: "https://github.com/pehaalmeida/avaliacao-vue-dotnet"
+    },
+    {
+      title: "MWP - Messenger WhatsApp processor",
+      description: "MWP é um sistema de processamento de mensagens do WhatsApp, desenvolvido em Python, que utiliza a API (EVO e META) do WhatsApp para receber e processar mensagens. O sistema é projetado para ser flexível e escalável, permitindo a integração com diferentes serviços e plataformas por meio de uma API REST.",
+      technologies: ["Python", "React", "Rest API", "Docker"],
+      github: "https://github.com/pehaalmeida",
+      demo: "https://github.com/pehaalmeida"
     }
   ];
 
@@ -226,7 +240,7 @@ function App() {
                 </span>
                 <br />
                 <span className={darkMode ? 'text-white' : 'text-gray-900'}>
-                  Full Stack
+                  FullStack
                 </span>
               </h1>
               <p className={`text-xl mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -308,12 +322,13 @@ function App() {
             >
               <h3 className="text-2xl font-bold mb-6">Desenvolvedor Apaixonado por Tecnologia</h3>
               <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Sou um desenvolvedor full stack focado em criar soluções robustas, escaláveis e eficientes. 
-                Minha trajetória na tecnologia começou com a curiosidade e rapidamente se transformou em uma paixão por resolver desafios complexos por meio do código e da inovação.
+                Sou Desenvolvedor Júnior na Linx Sistemas/Totvs, atuando no desenvolvimento e manutenção de aplicações voltadas para soluções corporativas. Minha trajetória na tecnologia começou com a curiosidade e evoluiu para uma paixão por transformar desafios em soluções eficientes por meio do código.
               </p>
               <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Atualmente atuo na Linx/Stone Co, onde sou responsável por ativações e implantações de sistemas. 
-                Possuo experiência sólida com C#, PHP, JavaScript e bancos de dados relacionais e não-relacionais. Estou sempre em busca das melhores práticas e das tecnologias mais atuais para entregar soluções de alto desempenho.
+                Atualmente trabalho com desenvolvimento utilizando Delphi, C# (.NET) e Angular/TypeScript, contribuindo ativamente na correção de bugs, implementação de novas funcionalidades e na evolução contínua dos sistemas internos. Busco constantemente aprimorar minhas habilidades técnicas e aplicar boas práticas de desenvolvimento para entregar soluções robustas, organizadas e de alto desempenho.
+                <br/>
+                <br/>
+                Estou sempre aberto a aprender novas tecnologias e colaborar em projetos que gerem impacto positivo e inovação.
               </p>
               <div className="flex items-center gap-4">
                 <MapPin className="w-5 h-5 text-blue-600" />
